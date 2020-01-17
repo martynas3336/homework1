@@ -1,0 +1,63 @@
+@mixin QuicksandBold()
+{
+  font-family:QuicksandBold;
+  font-weight:700;
+}
+
+@mixin QuicksandLight()
+{
+  font-family:QuicksandLight;
+  font-weight:300;
+}
+
+@mixin QuicksandMedium()
+{
+  font-family:QuicksandMedium;
+  font-weight:500;
+}
+
+@mixin QuicksandRegular()
+{
+  font-family:QuicksandRegular;
+  font-weight:400;
+}
+
+// Bold
+@font-face {
+  font-family:QuicksandBold;
+  src: url('../fonts/Quicksand/Quicksand-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Quicksand/Quicksand-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Quicksand/Quicksand-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Quicksand/Quicksand-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Quicksand/Quicksand-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+// Light
+@font-face {
+  font-family:QuicksandLight;
+  src: url('../fonts/Quicksand/Quicksand-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Quicksand/Quicksand-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Quicksand/Quicksand-Light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Quicksand/Quicksand-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Quicksand/Quicksand-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+// Medium
+@font-face {
+  font-family:QuicksandMedium;
+  src: url('../fonts/Quicksand/Quicksand-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Quicksand/Quicksand-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Quicksand/Quicksand-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Quicksand/Quicksand-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Quicksand/Quicksand-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+// Regular
+@font-face {
+  font-family:QuicksandRegular;
+  src: url('../fonts/Quicksand/Quicksand-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Quicksand/Quicksand-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Quicksand/Quicksand-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Quicksand/Quicksand-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Quicksand/Quicksand-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

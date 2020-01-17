@@ -1,0 +1,36 @@
+$breakpoint: (
+  1:320px,
+  2:1200px
+);
+
+@mixin media1 {
+  @media only screen and (max-width:map-get($breakpoint, 1)) {
+    @content;
+  }
+}
+@mixin media2 {
+  @media only screen and (min-width:map-get($breakpoint, 1)) and (max-width:map-get($breakpoint, 2)) {
+    @content;
+  }
+}
+@mixin media3 {
+  @media only screen and (min-width:map-get($breakpoint, 2)) {
+    @content;
+  }
+}
+
+
+@function screenSmall($size)
+{
+  @return $size / 1.5;
+}
+@function screenBig($size)
+{
+  @return $size;
+}
+@function screenMedium($size)
+{
+  /*calc([minimum size]px + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]px) / ([maximum viewport width] - [minimum viewport width])));*/
+  // for linear transition between $size/1.5 and $size
+  @return calc(( #{screenSmall($size)} * 1px) + (#{screenBig($size)} - #{screenSmall($size)}) * ((100vw - #{map-get($breakpoint, 1)}) / (#{strip_unit(map-get($breakpoint, 2))} - #{strip_unit(map-get($breakpoint, 1))})));
+}
